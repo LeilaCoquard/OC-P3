@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Les Films de Plein Air</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+        
+<!-- Entête -->
+        <div class="navbar fixed-top navbar-expand-lg">
+            <div class="navbar-brand"><img src="logo.png" alt="Logo" class="logo"></div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Accueil</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Festival
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Films">Films</a></li>
+                            <li><a class="dropdown-item" href="#Réservation">Réservation</a></li>
+                            <li><a class="dropdown-item" href="#InformationsPratiques">Informations Pratiques</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Actualités">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+<!-- Section Accueil -->
+        <section id="Accueil" class="bloc">
+            <figure>
+                <img src="Cinemapleinair.jpg" alt="Cinema en Plein Air">
+                <figcaption><h2>Vivez votre premier festival de cinema <br>en plein air au parc Monceau</h2></figcaption>
+            </figure>
+        </section>
+        
+<!-- Section Films -->
+        <hr/>
+        <section id="Films" class="bloc">
+            <h2>Films</h2>  
+            
+            <div id="filters" class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                  <label class="btn active">
+                    <input type="radio" name="options" id="option1" data-filter="*" checked> Tous
+                  </label>
+                  <label class="btn">
+                    <input type="radio" name="options" id="option2" data-filter=".Journée1"> 5 août
+                  </label>
+                  <label class="btn">
+                    <input type="radio" name="options" id="option3" data-filter=".Journée2"> 6 août
+                  </label>
+                  <label class="btn">
+                    <input type="radio" name="options" id="option4" data-filter=".Journée3"> 7 août
+                  </label>
+                  <label class="btn">
+                    <input type="radio" name="options" id="option5" data-filter=".Journée4"> 8 août
+                  </label>
+                  <label class="btn">
+                    <input type="radio" name="options" id="option6" data-filter=".Journée5"> 9 août
+                  </label>
+            </div>
+            
+            <div class="grid">
+              <div class="grid-item Journée1">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="Film1.jpg" alt="Card image cap">
+                        </div>
+                      <div class="card-body">
+                        <h6 class="card-title">Le Parrain</h6>
+                        <p>- 5 août à 18h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=1628.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="grid-item Journée1">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">La Vie est Belle</h6>
+                        <p>- 5 août à 20h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=64439.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée1">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film3.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Pulp Fiction</h6>
+                        <p>- 5 août à 22h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=10126.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée2">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film4.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Forest Gump</h6>
+                        <p>- 6 août à 18h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=10568.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée2">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film5.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Le Tombeau des Lucioles</h6>
+                        <p>- 6 août à 20h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=10251.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée2">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film6.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">La Cité de Dieu</h6>
+                        <p>- 6 août à 22h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=45264.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée3">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film7.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Apocalypse Now</h6>
+                        <p>- 7 août à 18h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=27061.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée3">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film8.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Reservoir Dogs</h6>
+                        <p>- 7 août à 20h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=7524.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+              <div class="grid-item Journée3">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="Film9.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">La Couleur des Sentiments</h6>
+                        <p>- 7 août à 22h -</p>
+                        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=176673.html" class="btn" target="_blank">Voir</a>
+                        <a href="#Réservation" class="btn">Réserver</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+        </section> 
+        
+<!-- Section Reservation -->
+        <hr/>
+        <section id="Réservation" class="bloc">
+            <h2>Réservation</h2>
+            <p>Nous vous remercions de réserver votre place </p>
+            
+            <form>
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="nom1">Nom</label>
+                        <input type="text" class="form-control" id="nom1" placeholder="Entrez votre nom">
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label for="Email1">Adresse Email</label>
+                        <input type="email" class="form-control" id="Email1" placeholder="Entrez votre adresse email">
+                      </div>
+                    </div>
+                </div>
+                
+              <div class="dropdown dropright">
+                <button class="btn dropdown-toggle btn-light" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Séance
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="dropdown-header">5 août</li>
+                    <li class="dropdown-item">Film1</li>
+                    <li class="dropdown-item">Film2</li>
+                    <li class="dropdown-item">Film3</li>
+                    <li class="dropdown-item">Film4</li>
+                </ul>
+              </div>
+                
+              <button type="submit" class="btn">Réserver</button>
+            </form>
+            
+        </section> 
+        
+<!-- Section Informations Pratiques -->
+        <hr/>
+        <section id="InformationsPratiques" class="bloc">
+            <h2>Informations pratiques</h2>
+            <p>Quand ? Les projections sont du 5 au 9 août, de 16h à 22h. Vous souhaitez venir ? Merci de s'inscrire ici.</p>
+            <p>Où ? Sur la grande pelouse du Parc Monceau à Paris 17ème</p>
+            <iframe height="400" style="border:0; width:100%; border:0"
+            src="https://www.google.com/maps/embed/v1/place?q=Parc+Monceau+Paris&key=AIzaSyAZ-Tx32scgVAFXzPySUmBEzPykQR5GV60" allowfullscreen></iframe>
+        </section>
+        
+        
+        
+<!-- Actualités -->
+        <hr/>
+        <section id="Actualités" class="bloc">
+            <h2>Actualités</h2>
+            <div class="row">
+                <div class="col-sm-6" id="newsletter">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail2">S'inscrire à la newsletter :</label>
+                            <input type="email" class="form-control" id="inputEmail2" placeholder="Entrez votre adresse email">
+                        </div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFestival-des-films-de-plein-air-572593879862890%2F&tabs=timeline&width=340&height=340&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="340" style="border:none;overflow:hidden" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        
+<!-- Contact -->
+        <hr/>
+        <section id="Contact" class="bloc">
+            <h2>Contact</h2>
+            <p>Pour nous tout renseignement, merci de compléter le formulaire suivant :</p>
+            
+            <form>
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="nom2">Nom</label>
+                        <input type="text" class="form-control" id="nom2" placeholder="Entrez votre nom">
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label for="Email2">Adresse Email</label>
+                        <input type="email" class="form-control" id="Email2" placeholder="Entrez votre adresse email">
+                      </div>
+                    </div>
+                </div>
+                
+              <div class="form-group">
+                <label for="Textarea1">Message</label>
+                <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn">Envoyer</button>
+            </form>
+            
+        </section>
+        
+    </div>
+
+<!-- Bas de page -->
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3 BrefDescriptif">
+                    <p>Premier Festival de cinema <br/>en plein air du parc Monceau,<br/>Du 5 au 9 août,<br/>De 16h à 22h</p>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3 ReseauxSociaux">
+                    <i class="fab fa-facebook-square" style="font-size:45px; margin:0 0.15em"></i>
+                    <i class="fab fa-instagram" style="font-size:45px; margin:0 0.15em"></i>
+                    <i class="fab fa-twitter-square" style="font-size:45px; margin:0 0.15em"></i>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h6>Association Les Films en Plein Air</h6>
+                    <p>Nous contacter en envoyant un email à lesfilmsenpleinair@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

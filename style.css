@@ -1,0 +1,134 @@
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.container{
+    max-width: 850px !important;
+}
+
+.navbar-brand{
+    width:15em;
+}
+
+.nav-item a{
+    color:#212529;
+}
+
+.navbar{
+    background-color: #F9D64A;
+}
+
+footer{
+    background-color: #F9D64A;
+}
+
+figure{
+    text-align:center;
+    position: relative;
+    display: inline-block;
+}
+
+img{
+    max-width:100%;
+}
+
+img.displayed {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.6);
+    width:100%;
+}
+
+.bloc{
+    padding-top:80px;
+    margin-top:-80px;
+}
+
+#Accueil{
+    margin-top:20px;
+}
+
+.card-img-wrapper{
+    height:220px;
+    overflow:hidden;
+    border-radius: .25rem .25rem 0 0;
+}
+.card-img-wrapper img {
+    position: relative;
+    top: -30px;
+}
+
+.card-body h6{
+    font-weight:bold;
+}
+
+.BrefDescriptif{
+    text-align: center;
+}
+
+.ReseauxSociaux{
+    text-align: center;
+}
+.fa{
+    margin:0.3em;
+}
+
+#Contact{
+    margin-bottom: 1em;
+}
+
+.dropright{
+    margin-bottom: 1em;
+}
+
+.grid-item{
+    width: 33%; padding: 5px; 
+}
+
+ #map{
+    height: 100%;
+  }
+
+#filters{
+    display:inline-block;
+}
+
+.btn{
+    margin-top: 0.1em;
+    color: white;
+    background-color: #384E77;
+}
+
+.btn.active {
+    background-color: #0D0630 !important;
+}
+
+.btn.focus {
+    background-color: #0D0630 !important; 
+}
+
+.btn-default{
+    background-color: #F9D64A;
+}
+
+@media (max-width: 520px){
+    .grid-item{
+    width: 100%; padding: 5px; 
+    }
+    figure{
+        margin-top:2em;
+    }
+    #newsletter{
+        margin-bottom: 1em;
+    }
+    .bloc{
+        padding-top:100px;
+        margin-top:-100px;
+    }
+}
